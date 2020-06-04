@@ -17,7 +17,7 @@ export const searchCats = (state=initialStateSearch, action={}) => {
 
 const initialStateCats = {
   cats: [],
-  isPending: true,
+  isPending: false,
   error: ''
 }
 
