@@ -12,8 +12,7 @@ export const searchCats = (state=initialStateSearch, action={}) => {
       return Object.assign({}, state, {searchField: action.payload})
     default:
       return state
-  }
-}
+  }}
 
 const initialStateCats = {
   cats: [],

@@ -2,7 +2,6 @@ import { CHANGE_SEARCHFIELD,
          REQUEST_CATS_PENDING,
          REQUEST_CATS_SUCCESS,
          REQUEST_CATS_FAILED } from './constants';
-
 import * as reducers from './reducers';
 
 describe('searchCats', () => {
@@ -22,19 +21,12 @@ const initialStateSearch = {
   })
 })
 
-
 describe('requestCats reducer', () => {
 const initialStateCats = {
   cats: [],
   isPending: false
 }
-  {/*it('should return the initial state', () => {
-    expect(reducers.requestCats(undefined, {})
-    ).toEqual(initialStateCats)
-     }) */}
-
- 
-
+  
   it('should handle REQUEST_CATS_PENDING action', () => {
     expect( reducers.requestCats(initialStateCats, {
         type: REQUEST_CATS_PENDING,
@@ -45,7 +37,6 @@ const initialStateCats = {
         isPending: true
       })
   })
-
 
   it('should handle REQUEST_CATS_SUCCESS action', () => {
     expect( reducers.requestCats(initialStateCats, {
@@ -65,7 +56,6 @@ const initialStateCats = {
         isPending: false
       })
   })
-
 
   it('should handle REQUEST_CATS_FAILED action', () => {
     expect( reducers.requestCats(initialStateCats, {
